@@ -1,6 +1,6 @@
 {
   "name": "jest-url-matchers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Collection of Jest matchers for URLs ",
   "main": "index.js",
   "scripts": {
@@ -12,10 +12,12 @@
   ],
   "author": "Brendan Ingham <brendan@ingham.dev>",
   "license": "MIT",
+  "repository": "breningham/jest-url-matchers",
   "files": [
     "dist/",
     "types/index.d.ts",
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "devDependencies": {
     "@types/jest": "^29.2.4",
