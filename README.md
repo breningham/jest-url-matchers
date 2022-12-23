@@ -32,3 +32,15 @@ import 'jest-url-matchers'
     # In your write your tests like this: 
     expect("https://www.google.com?s=search+query").toHaveQueryString("s");
 ```
+
+```typescript
+    // In your write your tests like this: 
+    expect("https://www.google.com?s=search").toHaveQueryString("s");
+    // ensure it has the correct value too!
+    expect("https://www.google.com?s=search").toHaveQueryString("s", "search");
+    // need to check multiple query strings? 
+    // Accepts arrays of [ querystring name, querystring value ], where the value is not required.
+    expect("https://www.long-url.com?abcd=1234&efgh=5678").toHaveQueryStrings(["abcd"], ["efgh", "5678"]);
+
+
+```
